@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>I Miss You</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+<script>
+    // Ask 3 custom questions
+    prompt("When is my birthday?");
+    prompt("What is my name?");
+    let answer3 = prompt("Do you miss me?");
+
+    // Normalize the answer (lowercase, remove spaces)
+    answer3 = answer3 ? answer3.trim().toLowerCase() : "";
+
+    // List of accepted yes answers
+    const yesAnswers = ["yes", "yeah", "yup", "yess", "of course", "sure", "definitely", "yesss"];
+
+    // Show final message
+    if (yesAnswers.includes(answer3)) {
+        document.write("<h1 style='text-align:center; color:red;'>❤️ I miss you praanth ❤️</h1>");
+    } else {
+        document.write("<h1 style='text-align:center; color:blue;'>😏 Ohhh, really? We'll see... 😏</h1>");
+    }
+</script>
+</body>
+</html>
